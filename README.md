@@ -15,3 +15,8 @@ O projeto serve como prática para:
 
 - HTML5
 - CSS3
+
+## Visualização
+
+O site pode ser acessado diretamente pelo GitHub Pages:  
+[Acesse o site aqui](https://thomaspollarini.github.io/Site_Cordel/)
