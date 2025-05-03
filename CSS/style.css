@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+:root {
+    --font1: verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+}
+
+html, body{
+    min-height: 100vh;
+    font-family: var(--font1);
 }
 
 header {
@@ -12,33 +20,41 @@ header {
 }
 
 header h1 {
-    padding-top: 40px;
-    font: bold 8em 'Passion One', arial, sans-serif;
+    padding-top: 50px;
+    font: bold 10vw var(--font2);
+    font-variant: small-caps;
 }
 
-header a {
+header a, footer a {
     color: white;
     text-decoration: none;
     font-weight: bold;
 }
 
-header a:hover {
+header a:hover, footer a:hover{
     text-decoration: underline;
 }
 
-main p{
-    font: normal 3em 'Sriracha', cursive;
+section {
+    font: normal 5vw var(--font3);
     text-align: justify;
+    padding: 10vh 30px;
     line-height: 2em;
 }
 
-section {
-    padding: 60px 30px 150px;
+section p {
+    padding-bottom: 2em;
+}
+
+section.color {
+    background-color: white;
+    color: black;
 }
 
 section.image {
-    background: black center no-repeat fixed;
+    background: rgb(27, 27, 27) center no-repeat fixed;
     background-size: cover;
+    color: white;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
 }
 
@@ -51,9 +67,11 @@ section#second {
 }
 
 section.image p{
-    width: 50%;
+    display: inline-block;
+    outline: 10px solid rgba(0, 0, 0, 0.308);
     color: white;
     background-color: rgba(0, 0, 0, 0.308);
+    text-shadow: 1px 1px 0px black;
 }
 
 footer {
@@ -61,14 +79,4 @@ footer {
     color: white;
     text-align: center;
     padding:10px;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-footer a:hover {
-    text-decoration: underline;
 }
